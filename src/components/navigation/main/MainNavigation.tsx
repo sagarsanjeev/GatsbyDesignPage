@@ -7,7 +7,7 @@ import styles from './style';
 interface Props {
   classes: any;
   options: Array<any>;
-};
+}
 
 const MainNavigation = ({ classes, options }: Props) => (
   <ul>
@@ -16,7 +16,8 @@ const MainNavigation = ({ classes, options }: Props) => (
         <Link
           to={link.to}
           className={classes.navLink}
-          activeClassName={classes.navLinkActive}>
+          activeClassName={classes.navLinkActive}
+        >
           <span>{link.text}</span>
         </Link>
       </li>

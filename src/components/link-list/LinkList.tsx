@@ -1,12 +1,11 @@
 import React from 'react';
 import { withStyles } from '@material-ui/styles';
-
 import styles from './style';
 
 interface Props {
   classes: any;
   links: Array<any>;
-};
+}
 
 const LinkList = ({ classes, links }: Props) => (
   <div>
@@ -17,7 +16,8 @@ const LinkList = ({ classes, links }: Props) => (
             href={to}
             target={newTab ? '_blank' : '_self'}
             rel={'noreferrer'}
-            className={classes.link}>
+            className={classes.link}
+          >
             <Icon />
             <span className={classes.linkText}>{text}</span>
           </a>

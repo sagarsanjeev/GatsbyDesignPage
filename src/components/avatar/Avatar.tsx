@@ -6,7 +6,7 @@ import styles from './style';
 
 interface Props {
   classes: any;
-};
+}
 
 const Avatar = ({ classes }: Props) => (
   <div className={classes.container}>

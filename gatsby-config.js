@@ -4,15 +4,16 @@ require('dotenv').config({
 
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter`,
-    description: `Gatsby Starter`,
-    author: `Polychronis Papadakis`,
+    title: `Sagar Sanjeev`,
+    description: `Full Stack Developer`,
+    author: `Sagar Sanjeev`,
   },
   plugins: [
     `gatsby-transformer-sharp`,
     `gatsby-transformer-remark`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-sass`,
     {
       resolve: `gatsby-plugin-typescript`,
     },
@@ -47,33 +48,14 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter`,
-        short_name: `Gatsby Starter`,
+        name: `Sagar Sanjeev`,
+        short_name: `SS`,
         start_url: `/`,
         background_color: `black`,
         theme_color: `black`,
         display: `minimal-ui`,
         icon: `src/images/favicon.png`,
       },
-    },
-    {
-      resolve: `gatsby-plugin-react-redux`,
-      options: {
-        pathToCreateStoreModule: "./src/state/store",
-        serialize: {
-          space: 0,
-          isJSON: true,
-          unsafe: false,
-        },
-      },
-    },
-    {
-      resolve: `gatsby-source-contentful`,
-      options: {
-        spaceId: process.env.CONTENTFUL_SPACE_ID,
-        accessToken:process.env.CONTENTFUL_ACCESS_TOKEN,
-        environment: process.env.CONTENTFUL_ENV,
-      }
     },
   ],
 }

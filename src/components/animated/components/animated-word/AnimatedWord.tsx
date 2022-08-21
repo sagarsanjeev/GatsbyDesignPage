@@ -13,7 +13,7 @@ interface Props {
   animateWord: boolean;
   animation: string;
   timeout: number;
-};
+}
 
 const AnimatedWord = ({
   classes,
@@ -28,7 +28,8 @@ const AnimatedWord = ({
     <span
       role={'presentation'}
       onMouseEnter={() => animateWord && setActiveAnimation(true)}
-      className={classNames(activeAnimation && animation, classes.word)}>
+      className={classNames(activeAnimation && animation, classes.word)}
+    >
       {animateWord
         ? word
         : word

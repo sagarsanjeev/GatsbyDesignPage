@@ -1,13 +1,12 @@
 import React from 'react';
-
-import { Layout, SEO } from 'components';
+import { LayoutHeader, SEO } from 'components';
 import { About } from 'containers';
 
 const AboutPage = () => (
-  <Layout>
+  <LayoutHeader>
     <SEO title='About' />
     <About />
-  </Layout>
+  </LayoutHeader>
 );
 
 export default AboutPage;

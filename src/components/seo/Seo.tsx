@@ -7,7 +7,7 @@ interface Props {
   lang?: string;
   meta: Array<any>;
   title: string;
-};
+}
 
 function SEO({ description, lang, meta, title }: Props) {
   const siteMetadata = useSiteMetadata();

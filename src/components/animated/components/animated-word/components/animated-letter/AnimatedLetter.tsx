@@ -12,7 +12,7 @@ interface Props {
   animation: string;
   animateLetter: boolean;
   timeout: number;
-};
+}
 
 const AnimatedLetter = ({
   classes,
@@ -27,7 +27,8 @@ const AnimatedLetter = ({
     <span
       role={'presentation'}
       onMouseEnter={() => animateLetter && setActiveAnimation(true)}
-      className={classNames(activeAnimation && animation, classes.letter)}>
+      className={classNames(activeAnimation && animation, classes.letter)}
+    >
       {letter}
     </span>
   );

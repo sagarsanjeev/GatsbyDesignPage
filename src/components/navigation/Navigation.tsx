@@ -12,7 +12,7 @@ import styles from './style';
 interface Props {
   classes: any;
   width: string;
-};
+}
 
 const Navigation = ({ classes, width }: Props) => {
   const [open, setOpen] = useState(false);
@@ -32,7 +32,4 @@ const Navigation = ({ classes, width }: Props) => {
   );
 };
 
-export default compose(
-  withWidth(),
-  withStyles(styles)
-)(Navigation);
+export default compose(withWidth(), withStyles(styles))(Navigation);

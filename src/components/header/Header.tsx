@@ -1,13 +1,12 @@
 import { Link } from 'gatsby';
 import React from 'react';
 import { withStyles } from '@material-ui/styles';
-
 import { Avatar, Navigation, Animated } from 'components';
 
 import styles from './style';
 interface Props {
   classes: any;
-};
+}
 
 const Header = ({ classes }: Props) => (
   <header className={classes.container}>

@@ -3,7 +3,7 @@ import { withStyles } from '@material-ui/styles';
 import { Scrollbars } from 'react-custom-scrollbars';
 import Fade from '@material-ui/core/Fade';
 import classNames from 'classnames';
-import { Header } from 'components';
+import { Header, Footer } from 'components';
 import styles from './style';
 
 require('typeface-roboto');
@@ -14,7 +14,7 @@ interface Props {
   noBackground: boolean;
 }
 
-const Layout = ({ classes, children, noBackground }: Props) => (
+const LayoutHeader = ({ classes, children, noBackground }: Props) => (
   <Scrollbars
     autoHide
     autoHideTimeout={1000}
@@ -28,11 +28,13 @@ const Layout = ({ classes, children, noBackground }: Props) => (
         !noBackground && classes.background
       )}
     >
+      <Header />
       <Fade in mountOnEnter unmountOnExit>
         <main className={classes.content}>{children}</main>
       </Fade>
+      <Footer />
     </div>
   </Scrollbars>
 );
 
-export default withStyles(styles)(Layout);
+export default withStyles(styles)(LayoutHeader);

@@ -13,7 +13,7 @@ interface Props {
   animateWord: boolean;
   animation: string;
   timeout: number;
-};
+}
 
 const Animated = ({
   children,
@@ -43,7 +43,8 @@ const Animated = ({
       className={classNames(
         activeAnimation && classes[animation],
         classes.item
-      )}>
+      )}
+    >
       {children}
     </span>
   );

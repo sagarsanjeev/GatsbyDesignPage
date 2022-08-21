@@ -15,7 +15,7 @@ interface Props {
   width: string;
   open: boolean;
   toggleMenu: () => void;
-};
+}
 
 const Navigation = ({ classes, width, open, toggleMenu }: Props) => (
   <div className={classes.container}>

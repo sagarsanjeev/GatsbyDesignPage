@@ -10,7 +10,7 @@ interface Props {
   options: Array<any>;
   open: boolean;
   onClick: () => void;
-};
+}
 
 const MobileNavigation = ({ classes, options, onClick, open }: Props) => (
   <>
@@ -22,7 +22,8 @@ const MobileNavigation = ({ classes, options, onClick, open }: Props) => (
             <Link
               to={link.to}
               className={classes.navLink}
-              activeClassName={classes.navLinkActive}>
+              activeClassName={classes.navLinkActive}
+            >
               <span>{link.text}</span>
             </Link>
           </div>
