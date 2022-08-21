@@ -24,6 +24,7 @@ function IndexPage() {
       <ReactFullpage
         debug={false}
         navigation={true}
+        licenseKey='YOUR_KEY_HERE'
         anchors={['Home', 'About', 'Experience']}
         sectionSelector={SECTION_SEL}
         render={(comp) => (
